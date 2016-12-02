@@ -3,12 +3,14 @@
 	const Schema = mongoose.Schema;
 
 	EmailSchema = new Schema({
-		to: { type: String, required: true },
-		from: { type: String, required: true },
+		to: { type: String },
+		from: { type: String },
 		bcc: [String],
-		subject: { type: String, required: true, default: '' },
-		message_body: { type: String, required: true, default: '' },
+		subject: { type: String},
+		message_body: { type: String },
 		created_at: { type: Date, default: Date.now },
+		email:{type:String},
+		password:{type:String},
 	});
 
-mongoose.model('Email', EmailSchema);
+	Email = mongoose.model('Email', EmailSchema);

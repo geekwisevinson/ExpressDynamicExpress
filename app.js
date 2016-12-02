@@ -1,5 +1,8 @@
-const env = process.env;
+env = process.env;
 console.log(env.DB_URL);
+
+const mongoose_functions = require('./mongoose_functions');
+mongoose_functions();
 
 const requires = require('./requires');
 requires();

@@ -6,5 +6,6 @@ module.exports =  () =>{
 		mongoose = require('mongoose');
 		Promise = require('bluebird');
 		logger = require('morgan');
+		jwt = require('jsonwebtoken');
 
 };
